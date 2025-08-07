@@ -440,8 +440,30 @@ section {
     }
 }
 
-.contact-icon > svg {
-    width: 24px !important;
-    height: 24px !important;
-    flex-shrink: 0;
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.contact-btn {
+    padding: 0.6rem 1.4rem;
+    border-radius: 6px;
+    border: 1px solid rgba(48, 77, 81, 0.2);
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #304d51;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+    background: rgba(165, 183, 219, 0.15);
+    border-color: rgba(165, 183, 219, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(48, 77, 81, 0.1);
 }
